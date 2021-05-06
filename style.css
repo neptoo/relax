@@ -28,12 +28,14 @@ body {
 }
 
 .gradient-container {
-  background: conic-gradient(#55b7a4 0%,
-      #4ca493 22%,
-      #ffffff 22%,
-      #ffffff 55%,
-      #336d62 55%,
-      #2a5b52 100%);
+  background: conic-gradient(
+    #f73f52 0%,
+    #f73f52 40%,
+    #7986c7 40%,
+    #7986c7 60%,
+    #ffea85 60%,
+    #ffea85 100%
+    );
   width: 320px;
   height: 320px;
   position: absolute;
@@ -41,6 +43,24 @@ body {
   left: -10px;
   z-index: -2;
   border-radius: 50%;
+}
+.gradient-container-blur {
+  background: conic-gradient(
+    #f73f52 0%,
+    #f73f52 40%,
+    #7986c7 40%,
+    #7986c7 60%,
+    #ffea85 60%,
+    #ffea85 100%
+    );
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -2;
+  border-radius: 50%;
+  filter: blur(15px);
 }
 
 .circle{
@@ -61,7 +81,7 @@ body {
   left: 140px;
   width: 20px;
   height: 190px;
-  animation: rotate 18s linear forwards infinite;
+  animation: rotate 7.5s linear forwards infinite;
   transform-origin: bottom center;
 }
 
@@ -74,11 +94,11 @@ body {
 }
 
 .container.grow{
-  animation: grow 8s linear forwards;
+  animation: grow 3s linear forwards;
 }
 
 .container.shrink{
-  animation: shrink 4s linear forwards;
+  animation: shrink 3s linear forwards;
 }
 
 @keyframes rotate{

@@ -12,17 +12,25 @@
   <h1>Relaxer</h1>
 
   <div class="container">
-
+    <!-- 最内圈的圆 -->
     <div class="circle"></div>
-
+    <!-- 变动的字 -->
     <p id="text"></p>
 
+    <!-- 旋转的小球 -->
     <div class="pointer-container">
       <div class="pointer"></div>
     </div>
-
+    
+    <!-- 渐变的圆圈 -->
     <div class="gradient-container"></div>
+    <div class="gradient-container-blur"></div>
   </div>
+
+  <!-- 提示声音/音效 -->
+  <audio src="/audio/breathin.mp3" class="breathe-in"></audio>
+  <audio src="/audio/hold.mp3" class="hold"></audio>
+  <audio src="/audio/breatheout.mp3" class="breathe-out"></audio>
 
   <script src="script.js"></script>
 </body>
